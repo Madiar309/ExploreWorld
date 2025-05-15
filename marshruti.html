@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploreWorld</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-image: url("./Foto/небо.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: transparent;
+      position: relative;
+      z-index: 10;
+      font-weight: bold;
+      text-decoration: none;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .destination {
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .destination img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .description {
+      background: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .description h2 {
+      margin-bottom: 10px;
+    }
+
+    /* Адаптивність */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      main {
+        padding: 10px;
+      }
+
+      .description {
+        padding: 15px;
+      }
+
+      .description h2 {
+        font-size: 20px;
+      }
+
+      .description p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EXPLOREWORLD</div>
+    <nav>
+      <a href="/exploreworld.html"><b>На головну</b></a>
+      <a href="marshruti.html"><b>Маршрути</b></a>
+      <a href="blog.html"><b>Блог</b></a>
+      <a href="pronas.html"><b>Про нас</b></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destination">
+      <a href="italia.html"><img src="/Foto/Italia2.jpg" alt="Італія" /></a>
+      <div class="description">
+        <h2>Італія</h2>
+        <p>Відвідайте мальовниче узбережжя Амальфі,<br> культурні скарби Риму та чарівність Тоскани</p>
+      </div>
+    </section>
+
+    <section class="destination">
+      <img src="/Foto/NovaZEL.jpg" alt="Нова Зеландія" />
+      <div class="description">
+        <h2>Нова Зеландія</h2>
+        <p>Досліджуйте захоплюючі пейзажі, наповнені пригодами</p>
+      </div>
+    </section>
+
+    <section class="destination">
+      <img src="/Foto/japan-1.jpg" alt="Японія" />
+      <div class="description">
+        <h2>Японія</h2>
+        <p>Зануртеся в атмосферу традицій, сучасності та сакури</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

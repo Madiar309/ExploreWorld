@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Італія - EXPLOREWORLD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("./Foto/небо.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #000;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding-bottom: 40px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    header {
+      position: relative;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav {
+      margin-left: auto;
+      display: flex;
+      gap: 20px;
+      font-weight: 500;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    section {
+      padding: 20px 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  section {
+    padding: 15px 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/Foto/Italia2.jpg" alt="Італія">
+      <div class="overlay">
+        <div class="topbar">
+         <div class="logo">EXPLOREWORLD</div>
+          <div class="nav">
+            <a href="/exploreworld.html"><b>На головну</b></a>
+            <a href="marshruti.html"><b>Маршрути</b></a>
+            <a href="blog.html"><b>Блог</b></a>
+            <a href="pronas.html"><b>Про нас</b></a>
+          </div>
+        </div>
+        <div class="title">Італія</div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Про Італію</h2>
+      <p>Італія – класична країна туризму, надзвичайно популярна в усьому світі. Стародавні прекрасні міста з їх неповторними пам'ятниками і скарбницями мистецтва, сприятливий клімат і розкішна природа країни принесли їй всесвітню славу.</p>
+    </section>
+
+    <section>
+      <h2>Міста та пам’ятки</h2>
+      <p>Італія – класична країна туризму, тут запропонують відпочинок на будь-який смак. Красиві різноманітні ландшафти, обширні пляжі, численні пам'ятники культури цієї країни незмінно зачаровують туристів.</p>
+    </section>
+
+    <section>
+      <h2>Кухня</h2>
+      <p>В Італії завжди розуміли толк в їжі. Італійці великі гурмани і в їжі визнають тільки найкраще. Італійська кухня дуже різноманітна.</p>
+    </section>
+  </div>
+</body>
+</html>
